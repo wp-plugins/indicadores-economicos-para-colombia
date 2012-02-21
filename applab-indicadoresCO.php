@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Indicadores Económicos - CO
+Plugin Name: Indicadores Económicos - Colombia
 Plugin URI: http://www.applab.in/
 Description: Widget desarrollado para mostrar los indicadores económicos más importantes para Colombia
 Version: 1.0
@@ -17,7 +17,7 @@ class Widget_indicadoresEconomicosCO
 {
     function activate() {
         $aData = array( 'WIDGET_NAME' => 'Indicadores Económicos',
-                        'WIDGET_PADDING' => '0px' );
+                        'WIDGET_WIDTH' => '100' );
 
         if( ! get_option( 'indicadoresEconomicosCO' ) ) {
             add_option( 'indicadoresEconomicosCO' , $aData );
@@ -39,20 +39,14 @@ class Widget_indicadoresEconomicosCO
                 <input name="indicadoresEconomicosCO_WIDGET_NAME" type="text" value="<?php echo $aData['WIDGET_NAME']; ?>" size="30" />
             </p>
             <p>
-                <label>Margen Interno:</label>
-                <select name="indicadoresEconomicosCO_WIDGET_PADDING">
-                    <option value="0px"<?php if ($aData['WIDGET_PADDING']=='0px') {echo ' selected="selected"';} else {echo '';}?>>0</option>
-                    <option value="5px"<?php if ($aData['WIDGET_PADDING']=='5px') {echo ' selected="selected"';} else {echo '';}?>>5</option>
-                    <option value="10px"<?php if ($aData['WIDGET_PADDING']=='10px') {echo ' selected="selected"';} else {echo '';}?>>10</option>
-                    <option value="15px"<?php if ($aData['WIDGET_PADDING']=='15px') {echo ' selected="selected"';} else {echo '';}?>>15</option>
-                    <option value="20px"<?php if ($aData['WIDGET_PADDING']=='20px') {echo ' selected="selected"';} else {echo '';}?>>20</option>
-                </select>
+                <label>Ancho en porcentaje:</label>
+                <input name="indicadoresEconomicosCO_WIDGET_WIDTH" type="text" value="<?php echo $aData['WIDGET_WIDTH']; ?>" />%
             </p>
         <?php
         if( isset( $_POST['indicadoresEconomicosCO_WIDGET_NAME'] ) )
         {
             $aData['WIDGET_NAME'] = esc_attr( $_POST['indicadoresEconomicosCO_WIDGET_NAME'] );
-            $aData['WIDGET_PADDING'] = esc_attr( $_POST['indicadoresEconomicosCO_WIDGET_PADDING'] );
+            $aData['WIDGET_WIDTH'] = esc_attr( $_POST['indicadoresEconomicosCO_WIDGET_WIDTH'] );
 
             update_option( 'indicadoresEconomicosCO', $aData );
         }
@@ -63,9 +57,12 @@ class Widget_indicadoresEconomicosCO
         
         echo $args['before_widget'];
         echo $args['before_title'] . $aData['WIDGET_NAME'] . $args['after_title'];
+        echo '<style type="text/css">
+              ul#bgList {width:'.$aData['WIDGET_WIDTH'].'%;}
+              </style>';
         ?>
         <!-- Indicadores Económicos -->
-        <div id="bgBody" style="padding: <?php echo $aData['WIDGET_PADDING']; ?>">
+        <div id="bgBody">
         <a id="bgLink" href="http://www.applab.in/" target="_blank">Integrado por AppLab.in</a>
         <script type="text/javascript">
         <!--
@@ -89,5 +86,4 @@ class Widget_indicadoresEconomicosCO
         
     }
 }
-
 ?>
