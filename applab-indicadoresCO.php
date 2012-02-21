@@ -84,8 +84,8 @@ class Widget_indicadoresEconomicosCO
     }
     function register() {
         
-        wp_register_sidebar_widget( '1','Indicadores Económicos - CO', array( 'Widget_indicadoresEconomicosCO', 'widget' ), array('description' => 'Widget desarrollado para mostrar los indicadores económicos de Colombia'));
-        wp_register_widget_control( '1','Indicadores Económicos - CO', array( 'Widget_indicadoresEconomicosCO', 'control' ));
+        wp_register_sidebar_widget( '1','Indicadores Económicos - Colombia', array( 'Widget_indicadoresEconomicosCO', 'widget' ), array('description' => 'Widget desarrollado para mostrar los indicadores económicos de Colombia'));
+        wp_register_widget_control( '1','Indicadores Económicos - Colombia', array( 'Widget_indicadoresEconomicosCO', 'control' ));
         
     }
 }
