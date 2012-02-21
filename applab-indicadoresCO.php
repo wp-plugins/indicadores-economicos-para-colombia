@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Indicadores Economicos - Colombia
+Plugin Name: Indicadores Económicos - Colombia
 Plugin URI: http://www.applab.in/
 Description: Widget desarrollado para mostrar los indicadores económicos más importantes para Colombia
 Version: 1.0
@@ -81,8 +81,8 @@ class Widget_indicadoresEconomicosCO
     }
     function register() {
         
-        wp_register_sidebar_widget( '1','Indicadores Economicos - Colombia', array( 'Widget_indicadoresEconomicosCO', 'widget' ), array('description' => 'Widget desarrollado para mostrar los indicadores economicos de Colombia'));
-        wp_register_widget_control( '1','Indicadores Economicos - Colombia', array( 'Widget_indicadoresEconomicosCO', 'control' ));
+        wp_register_sidebar_widget( '1','Indicadores Económicos - Colombia', array( 'Widget_indicadoresEconomicosCO', 'widget' ), array('description' => 'Widget desarrollado para mostrar los indicadores economicos de Colombia'));
+        wp_register_widget_control( '1','Indicadores Económicos - Colombia', array( 'Widget_indicadoresEconomicosCO', 'control' ));
         
     }
 }
