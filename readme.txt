@@ -1,15 +1,15 @@
 === Widget Indicadores Economicos para Colombia ===
 Contributors: AppLab - Laboratorio de Ideas
 Donate link: http://www.applab.in/
-Tags: Indicadores Economicos, colombia, dolar, petroleo, euro
+Tags: Indicadores Economicos, colombia, dolar, petroleo, euro 
 Requires at least: 2.0.2
 Tested up to: 3.3.1
 Stable tag: 1.0
-Widget desarrollado para mostrar los indicadores economicos mas relevantes en Colombia.
+Widget desarrollado para mostrar los indicadores econ&oacute;micos mas relevantes en Colombia.
 
 == Description ==
-Este Widget contiene el valor actualizado a pesos colombianos para el Dolar, Euro, Petroleo, Cafe, entre otros indicadores.
-Para ver mas Indicadores, puede visitar nuestro portal http://www.applab.in/
+Este Widget contiene el valor actualizado a pesos colombianos para el D&oacute;lar, Euro, Petr&oacute;leo, Caf&eacute;, entre otros indicadores.
+Para ver mas Indicadores Econ&oacute;micos, puede visitar nuestro portal http://www.applab.in/
 
 == Installation ==
 Esta seccion describe como instalar y activar el plugin.
