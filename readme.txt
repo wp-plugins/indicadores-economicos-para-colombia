@@ -1,7 +1,7 @@
 === Widget Indicadores Economicos para Colombia ===
 Contributors: AppLab - Laboratorio de Ideas
 Donate link: http://www.applab.in/
-Tags: Indicadores Economicos, colombia, dolar, petroleo, euro 
+Tags: Indicadores Economicos, colombia, dolar, petroleo, euro, d&oacute;lar
 Requires at least: 2.0.2
 Tested up to: 3.3.1
 Stable tag: 1.0
